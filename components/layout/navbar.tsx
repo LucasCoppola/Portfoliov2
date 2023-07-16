@@ -1,31 +1,33 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
-import useScroll from "@/lib/hooks/use-scroll";
+import Arrow from "../shared/icons/arrow";
 
 export default function NavBar() {
-  const scrolled = useScroll(50);
-
   return (
     <>
-      <div
-        className={`fixed top-0 flex w-full justify-center ${
-          scrolled
-            ? "border-b border-gray-200 bg-white/50 backdrop-blur-xl"
-            : "bg-white/0"
-        } z-30 transition-all`}
-      >
-        <div className="mx-5 flex h-16 w-full max-w-screen-xl items-center justify-between">
-          <Link href="/" className="flex items-center font-display text-2xl">
-            <Image
-              src="/logo.png"
-              alt="Precedent logo"
-              width="30"
-              height="30"
-              className="mr-2 rounded-sm"
-            ></Image>
-            <p>Precedent</p>
+      <div className="fixed top-0 z-30 mt-10 flex h-16 w-screen animate-fade-up items-center bg-white/0 px-8 transition-all">
+        <Link href="..">
+          <Arrow className="h-8 w-8 text-stone-500 hover:text-stone-400" />
+        </Link>
+        <div className="flex w-full items-center justify-center space-x-10">
+          <Link
+            href="/projects"
+            className="font-display text-2xl text-stone-500 hover:text-stone-400"
+          >
+            Projects
+          </Link>
+          <Link
+            href="/about"
+            className="font-display text-2xl text-stone-500 hover:text-stone-400"
+          >
+            About
+          </Link>
+          <Link
+            href="/contact"
+            className="font-display text-2xl text-stone-500 hover:text-stone-400"
+          >
+            Contact
           </Link>
         </div>
       </div>
