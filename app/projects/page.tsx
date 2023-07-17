@@ -1,7 +1,7 @@
 import React from "react";
-import Image from "next/image";
 import Balancer from "react-wrap-balancer";
 import Card from "@/components/home/card";
+import { title } from "process";
 
 export default function Projects() {
   return (
@@ -10,21 +10,11 @@ export default function Projects() {
         <Balancer>Projects</Balancer>
       </h1>
       <Card
-        title="project"
-        description="project description"
+        title="Project title"
+        description="Project Description"
         large={true}
-        demo={
-          <div className="flex items-center justify-center space-x-20">
-            <Image
-              alt="Auth.js logo"
-              src="/authjs.webp"
-              width={50}
-              height={50}
-            />
-            <Image alt="Prisma logo" src="/prisma.svg" width={50} height={50} />
-          </div>
-        }
-      />
+        demo={undefined}
+      ></Card>
     </>
   );
 }

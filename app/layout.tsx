@@ -5,18 +5,10 @@ import Navbar from "@/components/layout/navbar";
 import { Suspense } from "react";
 
 export const metadata = {
-  title: "Precedent - Building blocks for your Next.js project",
-  description:
-    "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
-  twitter: {
-    card: "summary_large_image",
-    title: "Precedent - Building blocks for your Next.js project",
-    description:
-      "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
-    creator: "@steventey",
-  },
-  metadataBase: new URL("https://precedent.dev"),
-  themeColor: "#FFF",
+  title: "Lucas Coppola | Portfolio",
+  description: "Lucas Coppola Portfolio",
+  metadataBase: new URL("https://lucascoppola.vercel.app/"),
+  themeColor: "#",
 };
 
 export default async function RootLayout({
