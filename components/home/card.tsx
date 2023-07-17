@@ -1,54 +1,46 @@
+"use client";
+
 import { ReactNode } from "react";
-import ReactMarkdown from "react-markdown";
+import useWindowSize from "@/lib/hooks/use-window-size";
 import Balancer from "react-wrap-balancer";
+import { ArrowRight } from "../shared/icons/arrow";
+
+type CardProps = {
+  title: string;
+  description: string;
+  width: string;
+  height: string;
+  date: string;
+  demo?: ReactNode;
+};
 
 export default function Card({
   title,
   description,
+  width,
+  height,
+  date,
   demo,
-  large,
-}: {
-  title: string;
-  description: string;
-  demo: ReactNode;
-  large?: boolean;
-}) {
+}: CardProps) {
+  const { isDesktop } = useWindowSize();
+
   return (
     <div
-      className={`relative col-span-1 h-full w-1/2 overflow-hidden rounded-xl border border-zinc-600 bg-gradient-to-br from-zinc-900 via-zinc-400/10 to-zinc-900 p-8 shadow-md ${
-        large ? "md:col-span-2" : ""
-      }`}
+      className={`${width} ${height} relative overflow-hidden rounded-xl border border-zinc-600 bg-gradient-to-br from-zinc-900 via-zinc-400/10 to-zinc-900 p-6 shadow-md`}
     >
-      <div className="mx-auto max-w-md text-center">
-        <h2 className="bg-gradient-to-br from-white to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent md:text-3xl md:font-normal">
+      <div className="mx-auto">
+        <p className="mb-3 font-display text-sm text-stone-400">{date}</p>
+        <h2 className="font-display font-bold tracking-normal text-stone-200 md:text-4xl">
           <Balancer>{title}</Balancer>
         </h2>
-        <div className="prose-sm -mt-2 leading-normal text-gray-500 md:prose">
-          <Balancer>
-            <ReactMarkdown
-              components={{
-                a: ({ node, ...props }) => (
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    {...props}
-                    className="font-medium text-gray-800 underline transition-colors"
-                  />
-                ),
-                code: ({ node, ...props }) => (
-                  <code
-                    {...props}
-                    // @ts-ignore (to fix "Received `true` for a non-boolean attribute `inline`." warning)
-                    inline="true"
-                    className="rounded-sm bg-gray-100 px-1 py-0.5 font-mono font-medium text-gray-800"
-                  />
-                ),
-              }}
-            >
-              {description}
-            </ReactMarkdown>
-          </Balancer>
+        <div className="font- mt-4 font-default leading-7 text-zinc-400">
+          <Balancer>{description}</Balancer>
         </div>
+        {isDesktop && (
+          <button className="mt-4 flex items-center font-default text-stone-200">
+            Read more <ArrowRight className="ml-1 mt-0.5" />
+          </button>
+        )}
       </div>
     </div>
   );
