@@ -1,11 +1,11 @@
-"use client";
+// "use client";
 
 import "./globals.css";
 import cx from "classnames";
 import { sfPro, inter } from "./fonts";
 import Navbar from "@/components/layout/navbar";
 import { Suspense } from "react";
-import { usePathname } from "next/navigation";
+import ClientLayout from "@/components/layout/clientLayout";
 
 export const metadata = {
   title: "Lucas Coppola | Portfolio",
@@ -19,7 +19,7 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const pathname = usePathname();
+  
   return (
     <html lang="en">
       <body className={cx(sfPro.variable, inter.variable)}>
@@ -27,13 +27,7 @@ export default async function RootLayout({
         <Suspense fallback="...">
           <Navbar />
         </Suspense>
-        <main
-          className={`${
-            pathname.endsWith("/") ? "min-h-screen" : ""
-          } flex w-full flex-col items-center justify-center px-8 py-32`}
-        >
-          {children}
-        </main>
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );
