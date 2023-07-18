@@ -12,7 +12,7 @@ export default function ClientLayout({
 
   return (
     <main
-      className={`flex w-full flex-col items-center justify-center px-8 py-32 ${className}`}
+      className={`flex w-full flex-col items-center justify-center px-8 py-20 ${className}`}
     >
       {children}
     </main>
