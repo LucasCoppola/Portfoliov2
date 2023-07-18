@@ -15,9 +15,10 @@ export default function Projects() {
       </p>
       <div className="z-10 mt-8 h-px w-full bg-zinc-800" />
       <div className="my-16 flex h-auto w-full flex-col items-center lg:flex-row">
-        {ProjectsData.map(({ key, title, description, classes, date }) => (
+        {ProjectsData.map(({ id, title, description, classes, date }) => (
           <Card
-            key={key}
+            key={id}
+            id={id}
             title={title}
             description={description}
             classes={classes}
@@ -29,9 +30,10 @@ export default function Projects() {
       <div className="mx-auto grid w-full grid-cols-1 gap-4 md:grid-cols-3 lg:mx-0">
         <div className="grid grid-cols-1 gap-4">
           {ExtraProjectsData.filter((_, i) => i % 3 === 0).map(
-            ({ key, title, description, classes, date }) => (
+            ({ id, title, description, classes, date }) => (
               <SmallCard
-                key={key}
+                key={id}
+                id={id}
                 title={title}
                 description={description}
                 classes={classes}
@@ -42,9 +44,10 @@ export default function Projects() {
         </div>
         <div className="grid grid-cols-1 gap-4">
           {ExtraProjectsData.filter((_, i) => i % 3 === 1).map(
-            ({ key, title, description, classes, date }) => (
+            ({ id, title, description, classes, date }) => (
               <SmallCard
-                key={key}
+                key={id}
+                id={id}
                 title={title}
                 description={description}
                 classes={classes}
@@ -55,9 +58,10 @@ export default function Projects() {
         </div>
         <div className="grid grid-cols-1 gap-4">
           {ExtraProjectsData.filter((_, i) => i % 3 === 2).map(
-            ({ key, title, description, classes, date }) => (
+            ({ id, title, description, classes, date }) => (
               <SmallCard
-                key={key}
+                key={id}
+                id={id}
                 title={title}
                 description={description}
                 classes={classes}

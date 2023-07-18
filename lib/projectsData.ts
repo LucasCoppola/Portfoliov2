@@ -2,7 +2,7 @@ import { CardProps } from "@/components/home/card";
 
 export const ProjectsData: CardProps[] = [
   {
-    key: 1,
+    id: 1,
     title: "Strenght Shop",
     description:
       "I'm building a SAAS providing global latency monitoring for your APIs and websites from edge locations around the world. Have you ever wondered how fast your API is in any part of the world? Planetfall allows you to find out and monitor it continuously.",
@@ -10,7 +10,7 @@ export const ProjectsData: CardProps[] = [
     date: "Apr 1, 2023",
   },
   {
-    key: 2,
+    id: 2,
     title: "Storage App",
     description:
       "I'm building a SAAS providing global latency monitoring for your APIs and websites from edge locations around the world. Have you ever wondered how fast your API is in any part of the world? Planetfall allows you to find out and monitor it continuously.",
@@ -21,7 +21,7 @@ export const ProjectsData: CardProps[] = [
 
 export const ExtraProjectsData: CardProps[] = [
   {
-    key: 3,
+    id: 3,
     title: "Project title",
     description:
       "I'm building a SAAS providing global latency monitoring for your APIs and websites.",
@@ -29,7 +29,7 @@ export const ExtraProjectsData: CardProps[] = [
     date: "Apr 1, 2023",
   },
   {
-    key: 4,
+    id: 4,
     title: "Project title",
     description:
       "I'm building a SAAS providing global latency monitoring for your APIs and websites.",
@@ -37,7 +37,7 @@ export const ExtraProjectsData: CardProps[] = [
     date: "Apr 1, 2023",
   },
   {
-    key: 5,
+    id: 5,
     title: "Project title",
     description:
       "I'm building a SAAS providing global latency monitoring for your APIs and websites. I'm building a SAAS providing global latency monitoring for your APIs and websites.",
@@ -45,7 +45,7 @@ export const ExtraProjectsData: CardProps[] = [
     date: "Apr 1, 2023",
   },
   {
-    key: 6,
+    id: 6,
     title: "Project title",
     description:
       "I'm building a SAAS providing global latency monitoring for your APIs and websites.",
@@ -53,7 +53,7 @@ export const ExtraProjectsData: CardProps[] = [
     date: "Apr 1, 2023",
   },
   {
-    key: 7,
+    id: 7,
     title: "Project title",
     description:
       "I'm building a SAAS providing global latency monitoring for your APIs and websites.",
@@ -61,7 +61,7 @@ export const ExtraProjectsData: CardProps[] = [
     date: "Apr 1, 2023",
   },
   {
-    key: 8,
+    id: 8,
     title: "Project title",
     description:
       "I'm building a SAAS providing global latency monitoring for your APIs and websites.",
@@ -69,7 +69,7 @@ export const ExtraProjectsData: CardProps[] = [
     date: "Apr 1, 2023",
   },
   {
-    key: 9,
+    id: 9,
     title: "Project title",
     description:
       "I'm building a SAAS providing global latency monitoring for your APIs and websites.",
