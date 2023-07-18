@@ -19,12 +19,12 @@ export default function Card({
   classes,
   date,
 }: CardProps) {
-  const { isDesktop, isMid } = useWindowSize();
+  const { isDesktop, isMid, isMobile } = useWindowSize();
 
   return (
     <article
       className={`${
-        isMid ? "w-full" : classes
+        isMid || isMobile ? "w-full" : classes
       } relative m-3 h-auto overflow-hidden rounded-xl border border-zinc-600 bg-gradient-to-br from-zinc-900 via-zinc-400/10 to-zinc-900 p-6 shadow-md`}
     >
       <div className="mx-auto">

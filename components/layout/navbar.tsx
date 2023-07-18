@@ -16,31 +16,31 @@ export default function NavBar() {
           scrolled
             ? "border-b border-zinc-800 bg-zinc-900 backdrop-blur-xl"
             : ""
-        } flex h-16 w-screen animate-fade-up items-center bg-white/0 px-8 transition-all`}
+        } flex h-12 w-screen animate-fade-up items-center bg-white/0 px-8 transition-all md:h-16`}
       >
         <Link href="..">
           <ArrowLeft
             className={`${
               pathname.endsWith("/") ? "opacity-0" : ""
-            } h-8 w-8 text-stone-500 hover:text-stone-400`}
+            } h-6 w-6 text-stone-500 hover:text-stone-400 md:h-8 md:w-8`}
           />
         </Link>
-        <div className="flex w-full items-center justify-center space-x-10">
+        <div className="flex w-full items-center justify-center space-x-5 md:space-x-10">
           <Link
             href="/projects"
-            className="font-display text-xl text-stone-500 hover:text-stone-400"
+            className="font-display text-stone-500 hover:text-stone-400 md:text-xl"
           >
             Projects
           </Link>
           <Link
             href="/about"
-            className="font-display text-xl text-stone-500 hover:text-stone-400"
+            className="font-display text-stone-500 hover:text-stone-400 md:text-xl"
           >
             About
           </Link>
           <Link
             href="/contact"
-            className="font-display text-xl text-stone-500 hover:text-stone-400"
+            className="font-display text-stone-500 hover:text-stone-400 md:text-xl"
           >
             Contact
           </Link>
