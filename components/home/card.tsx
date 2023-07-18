@@ -5,7 +5,7 @@ import Balancer from "react-wrap-balancer";
 import { ArrowRight } from "../shared/icons/arrow";
 
 export type CardProps = {
-  id: number;
+  key: number;
   title: string;
   description: string;
   classes: string;
@@ -13,7 +13,7 @@ export type CardProps = {
 };
 
 export default function Card({
-  id,
+  key,
   title,
   description,
   classes,
