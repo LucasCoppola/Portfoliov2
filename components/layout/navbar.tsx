@@ -13,10 +13,8 @@ export default function NavBar() {
     <>
       <div
         className={`fixed top-0 z-10 ${
-          scrolled
-            ? "border-b border-zinc-800 bg-zinc-900 backdrop-blur-xl"
-            : ""
-        } flex h-12 w-screen animate-fade-up items-center bg-white/0 px-8 transition-all md:h-16`}
+          scrolled ? "border border-zinc-800 bg-zinc-900 backdrop-blur-xl" : ""
+        } flex h-12 w-screen animate-fade-up items-center px-8 transition-all md:h-16`}
       >
         <Link href="..">
           <ArrowLeft
