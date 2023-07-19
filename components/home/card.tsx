@@ -9,26 +9,22 @@ export type CardProps = {
   id: number;
   title: string;
   description: string;
-  classes: string;
   date: string;
+  githubLink?: string;
+  externalLink?: string;
 };
 
-export default function Card({
-  id,
-  title,
-  description,
-  classes,
-  date,
-}: CardProps) {
+export default function Card({ id, title, description, date }: CardProps) {
   const { isDesktop, isMid, isMobile } = useWindowSize();
 
   return (
-    <Link href={`/projects/${id}`}>
-      <article
-        className={`${
-          isMid || isMobile ? "w-full" : classes
-        } relative m-3 h-auto overflow-hidden rounded-xl border border-zinc-600 bg-gradient-to-br from-zinc-900 via-zinc-400/10 to-zinc-900 p-6 shadow-md`}
-      >
+    <Link
+      href={`/projects/${id}`}
+      className={`${
+        isMid || isMobile ? "w-full" : "lg:w-1/2"
+      } relative m-3 h-auto overflow-hidden rounded-xl border border-zinc-600 bg-gradient-to-br from-zinc-900 via-zinc-400/10 to-zinc-900 shadow-md`}
+    >
+      <article className="p-6">
         <div className="mx-auto">
           <p className="mb-3 font-display text-sm text-stone-400">{date}</p>
           <h2 className="font-display text-3xl font-bold tracking-normal text-stone-200 md:text-4xl">
