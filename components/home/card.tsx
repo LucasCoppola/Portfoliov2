@@ -10,6 +10,7 @@ export type CardProps = {
   title: string;
   description: string;
   date: string;
+  technologies: string;
   githubLink?: string;
   externalLink?: string;
 };
@@ -22,7 +23,7 @@ export default function Card({ id, title, description, date }: CardProps) {
       href={`/projects/${id}`}
       className={`${
         isMid || isMobile ? "w-full" : "lg:w-1/2"
-      } relative m-3 h-auto overflow-hidden rounded-xl border border-zinc-600 bg-gradient-to-br from-zinc-900 via-zinc-400/10 to-zinc-900 shadow-md`}
+      } relative overflow-hidden rounded-xl border border-zinc-600 bg-gradient-to-br from-zinc-900 via-zinc-400/10 to-zinc-900 shadow-md md:h-[23rem]`}
     >
       <article className="p-6">
         <div className="mx-auto">
@@ -30,8 +31,12 @@ export default function Card({ id, title, description, date }: CardProps) {
           <h2 className="font-display text-3xl font-bold tracking-normal text-stone-200 md:text-4xl">
             <Balancer>{title}</Balancer>
           </h2>
-          <div className="font- mt-4 font-default leading-7 text-zinc-400">
-            <Balancer>{description}</Balancer>
+          <div className="mt-4 font-default leading-7 text-zinc-400">
+            <Balancer>
+              {isMobile
+                ? description.substring(0, 200) + "..."
+                : description.substring(0, 350) + "..."}
+            </Balancer>
           </div>
           {isDesktop && (
             <button className="mt-8 flex items-center font-default text-stone-200">

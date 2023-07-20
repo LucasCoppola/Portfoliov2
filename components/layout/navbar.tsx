@@ -12,11 +12,11 @@ export default function NavBar() {
   return (
     <>
       <div
-        className={`fixed top-0 z-10 ${
+        className={`fixed top-0 z-30 ${
           scrolled ? "border border-zinc-800 bg-zinc-900 backdrop-blur-xl" : ""
         } flex h-12 w-screen animate-fade-up items-center px-8 transition-all md:h-16`}
       >
-        <Link href="..">
+        <Link href=".">
           <ArrowLeft
             className={`${
               pathname.endsWith("/") ? "opacity-0" : ""
