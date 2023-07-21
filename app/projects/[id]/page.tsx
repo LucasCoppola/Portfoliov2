@@ -66,7 +66,7 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
         <>
           {project?.media && (
             <Image
-              className="h-[60vh] rounded-lg border border-zinc-800 lg:w-auto lg:max-w-3xl"
+              className="w-full rounded-lg border border-zinc-800 lg:h-[60vh] lg:w-[60%] lg:max-w-3xl"
               src={
                 project?.media ||
                 "https://res.cloudinary.com/dotpfjpno/image/upload/v1689976510/default-placeholder_qlzkaw.png"
