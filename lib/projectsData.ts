@@ -26,16 +26,25 @@ export const ProjectsData: CardProps[] = [
 export const ExtraProjectsData: CardProps[] = [
   {
     id: 3,
-    title: "Portfolio",
-    description:
-      "I'm building a SAAS providing global I'm building a SAAS providing global latency monitoring for your APIs and websites.",
-    technologies: "React and Tailwind.",
-    date: "May 19, 2023",
-    githubLink: "https://github.com/LucasCoppola/Portfolio",
-    externalLink: "https://lucascoppola.netlify.app",
+    title: "Portfolio 2.0",
+    description: "The website you're looking at.",
+    date: "Soon",
+    technologies: "Next.js, React, Typescript and Tailwind.",
+    githubLink: "https://github.com/LucasCoppola/Portfoliov2",
+    externalLink: "https://lucascoppola.vercel.app",
   },
   {
     id: 4,
+    title: "Cart App",
+    description:
+      "Simple cart app for easy shopping. Add, delete, and adjust product quantities effortlessly.",
+    technologies: "React and CSS.",
+    date: "Apr 13, 2023",
+    githubLink: "https://github.com/LucasCoppola/react-cart-app",
+    externalLink: "https://addtocart-app.netlify.app/",
+  },
+  {
+    id: 5,
     title: "Image Uploader",
     description:
       "This application allows users to upload an image file, see a preview of the uploaded image and get the URL of the uploaded image.",
@@ -45,53 +54,34 @@ export const ExtraProjectsData: CardProps[] = [
     externalLink: "https://img-uploads.vercel.app/",
   },
   {
-    id: 5,
-    title: "Project title",
-    description:
-      "I'm building a SAAS providing global latency monitoring for your APIs and websites.",
-    technologies: "",
-    date: "Apr 1, 2023",
-    githubLink: "",
-    externalLink: "",
-  },
-  {
     id: 6,
-    title: "Project title",
+    title: "Task Manager",
     description:
-      "I'm building a SAAS providing global latency monitoring for your APIs and websites.",
-    technologies: "",
-    date: "Apr 1, 2023",
-    githubLink: "",
-    externalLink: "",
+      "A straightforward and efficient to-do list application with seamless data storage in a database for efficient task management. Easily add, edit, and manage tasks using this user-friendly app.",
+    technologies: "Ejs, CSS, Node.js, Express.js, Mongoose and MongoDB.",
+    date: "Apr 4, 2023",
+    githubLink: "https://github.com/LucasCoppola/Task-Manager",
+    externalLink: "https://task-manager-bm8s.onrender.com",
   },
   {
     id: 7,
-    title: "Portfolio 2.0",
-    description: "The website you're looking at.",
-    date: "Soon",
-    technologies: "Next.js, React, Typescript and Tailwind.",
-    githubLink: "https://github.com/LucasCoppola/Portfoliov2",
-    externalLink: "https://lucascoppola.vercel.app",
+    title: "Portfolio",
+    description:
+      "This is my first portfolio, created to display my projects, the technologies I'm familiar with, a brief introduction about myself, and a timeline of my journey so far.",
+    technologies: "React and Tailwind.",
+    date: "May 19, 2023",
+    githubLink: "https://github.com/LucasCoppola/Portfolio",
+    externalLink: "https://lucascoppola.netlify.app",
   },
   {
     id: 8,
-    title: "Project title",
+    title: "Quiz App",
     description:
-      "I'm building a SAAS providing global latency monitoring for your APIs and websites.",
-    technologies: "",
-    date: "Apr 1, 2023",
-    githubLink: "",
-    externalLink: "",
-  },
-  {
-    id: 9,
-    title: "Project title",
-    description:
-      "I'm building a SAAS providing global latency monitoring for your APIs and websites.",
-    technologies: "",
-    date: "Apr 1, 2023",
-    githubLink: "",
-    externalLink: "",
+      "This was one of my first projects. It's a basic application that fetches trivia questions from an external API. Users can take fun quizzes and test their knowledge.",
+    technologies: "HTML, CSS and Javascript.",
+    date: "Dec 30, 2022",
+    githubLink: "https://github.com/LucasCoppola/quiz-app",
+    externalLink: "https://lucascoppola.github.io/quiz-app",
   },
 ];
 

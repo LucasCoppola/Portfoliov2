@@ -15,7 +15,7 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
   );
 
   return (
-    <div className="z-10 flex flex-col lg:mt-12 lg:flex-row">
+    <div className="z-10 mt-12 flex flex-col lg:flex-row">
       <div className="min-h-screen text-center lg:w-1/2 lg:text-left">
         <h1 className="w-full font-display text-5xl font-bold tracking-normal text-stone-300 drop-shadow-sm md:leading-[5rem] lg:text-6xl">
           <Balancer>{project?.title}</Balancer>
@@ -47,7 +47,7 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
         className="z-10 h-[60vh] rounded-md border border-zinc-800 lg:w-1/2"
       >
         <source
-          src="https://res.cloudinary.com/dotpfjpno/video/upload/v1689775379/analytics_fpoq1f.mp4"
+          src="https://res.cloudinary.com/dotpfjpno/video/upload/v1689953735/StrengthShopVideo_p57pp1.mp4"
           type="video/mp4"
         />
       </video>

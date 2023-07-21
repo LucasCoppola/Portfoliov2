@@ -13,7 +13,7 @@ export default function SmallCard({ id, title, description, date }: CardProps) {
       href={`/projects/${id}`}
       className={`${
         isMobile ? "w-full" : ""
-      } relative h-full overflow-hidden rounded-xl border border-zinc-600 bg-gradient-to-br from-zinc-900 via-zinc-400/10 to-zinc-900 shadow-md`}
+      } relative overflow-hidden rounded-xl border border-zinc-600 bg-gradient-to-br from-zinc-900 via-zinc-400/10 to-zinc-900 shadow-md`}
     >
       <article className="p-4 md:p-6">
         <div className="mx-auto">

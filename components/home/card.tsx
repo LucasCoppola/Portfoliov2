@@ -23,7 +23,7 @@ export default function Card({ id, title, description, date }: CardProps) {
       href={`/projects/${id}`}
       className={`${
         isMid || isMobile ? "w-full" : "lg:w-1/2"
-      } relative overflow-hidden rounded-xl border border-zinc-600 bg-gradient-to-br from-zinc-900 via-zinc-400/10 to-zinc-900 shadow-md md:h-[23rem]`}
+      } relative overflow-hidden rounded-xl border border-zinc-600 bg-gradient-to-br from-zinc-900 via-zinc-400/10 to-zinc-900 shadow-md lg:h-96`}
     >
       <article className="p-6">
         <div className="mx-auto">

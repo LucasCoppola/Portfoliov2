@@ -14,7 +14,7 @@ export default function Projects() {
         <Balancer>Here are some of the projects I&apos;ve worked on.</Balancer>
       </p>
       <div className="z-10 mt-8 h-px w-full bg-zinc-800" />
-      <div className="my-16 flex h-auto w-full flex-col items-center space-x-6 lg:flex-row">
+      <div className="my-16 flex h-auto w-full flex-col items-center space-y-6 lg:flex-row lg:space-x-6 lg:space-y-0">
         {ProjectsData.map(({ id, title, description, technologies, date }) => (
           <Card
             key={id}
