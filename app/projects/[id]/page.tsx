@@ -17,11 +17,19 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
 
   return (
     <div className="z-10 mt-12 flex flex-col lg:flex-row">
-      <div className="min-h-screen text-center lg:w-1/2 lg:text-left">
-        <h1 className="w-full font-display text-4xl font-bold tracking-normal text-stone-300 drop-shadow-sm md:leading-[5rem] lg:text-6xl">
+      <div
+        className={`min-h-screen text-center ${
+          project?.media ? "lg:w-1/2 lg:text-left" : ""
+        }`}
+      >
+        <h1 className="w-full font-display text-5xl font-bold tracking-normal text-stone-300 drop-shadow-sm md:leading-[5rem] lg:text-6xl">
           <Balancer>{project?.title}</Balancer>
         </h1>
-        <p className="mx-auto mt-4 font-default text-sm leading-7 text-zinc-400 md:w-1/2 lg:mt-8 lg:w-full lg:pr-14 lg:text-base">
+        <p
+          className={`mx-auto mt-4 font-default text-sm leading-7 text-zinc-400 md:w-1/2 lg:mt-8 lg:w-full ${
+            project?.media ? "lg:pr-14" : ""
+          } lg:text-base`}
+        >
           {project?.description}
         </p>
         <div className="mt-8">
@@ -29,7 +37,11 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
             Built with: {project?.technologies}
           </p>
         </div>
-        <div className="mt-12 flex items-center justify-center space-x-10 text-zinc-400 lg:justify-start">
+        <div
+          className={`mt-12 flex items-center justify-center space-x-10 text-zinc-400 ${
+            project?.media ? "lg:justify-start" : ""
+          }`}
+        >
           {project?.githubLink && (
             <Link href={project.githubLink} target="_blank">
               <Github className="h-8 w-8 duration-200 hover:-translate-y-0.5 hover:text-zinc-300" />
@@ -52,17 +64,19 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
         </video>
       ) : (
         <>
-          <Image
-            className="h-[60vh] lg:w-1/2"
-            src={
-              project?.media ||
-              "https://res.cloudinary.com/dotpfjpno/image/upload/v1689976510/default-placeholder_qlzkaw.png"
-            }
-            alt={project!.title}
-            priority
-            width={400}
-            height={300}
-          />
+          {project?.media && (
+            <Image
+              className="h-[60vh] rounded-lg border border-zinc-800 lg:w-auto lg:max-w-3xl"
+              src={
+                project?.media ||
+                "https://res.cloudinary.com/dotpfjpno/image/upload/v1689976510/default-placeholder_qlzkaw.png"
+              }
+              unoptimized
+              alt={project?.title}
+              width={400}
+              height={300}
+            />
+          )}
         </>
       )}
     </div>

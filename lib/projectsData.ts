@@ -43,6 +43,7 @@ export const ExtraProjectsData: CardProps[] = [
     description:
       "Simple cart app for easy shopping. Add, delete, and adjust product quantities effortlessly.",
     technologies: "React and CSS.",
+    media: "/CartApp.png",
     date: "Apr 13, 2023",
     githubLink: "https://github.com/LucasCoppola/react-cart-app",
     externalLink: "https://addtocart-app.netlify.app/",
@@ -53,6 +54,7 @@ export const ExtraProjectsData: CardProps[] = [
     description:
       "This application allows users to upload an image file, see a preview of the uploaded image and get the URL of the uploaded image.",
     technologies: "Typescript, React, Tailwind, Node.js and Express.js.",
+    media: "/img-uploader.png",
     date: "July 14, 2023",
     githubLink: "https://github.com/LucasCoppola/Image-Uploader",
     externalLink: "https://img-uploads.vercel.app/",
@@ -63,6 +65,7 @@ export const ExtraProjectsData: CardProps[] = [
     description:
       "A straightforward and efficient to-do list application with seamless data storage in a database for efficient task management. Easily add, edit, and manage tasks using this user-friendly app.",
     technologies: "Ejs, CSS, Node.js, Express.js, Mongoose and MongoDB.",
+    media: "/Task Manager.png",
     date: "Apr 4, 2023",
     githubLink: "https://github.com/LucasCoppola/Task-Manager",
     externalLink: "https://task-manager-bm8s.onrender.com",
@@ -73,6 +76,7 @@ export const ExtraProjectsData: CardProps[] = [
     description:
       "This is my first portfolio, created to display my projects, the technologies I'm familiar with, a brief introduction about myself, and a timeline of my journey so far.",
     technologies: "React and Tailwind.",
+    media: "/Portfolio.png",
     date: "May 19, 2023",
     githubLink: "https://github.com/LucasCoppola/Portfolio",
     externalLink: "https://lucascoppola.netlify.app",
@@ -83,6 +87,7 @@ export const ExtraProjectsData: CardProps[] = [
     description:
       "This was one of my first projects. It's a basic application that fetches trivia questions from an external API. Users can take fun quizzes and test their knowledge.",
     technologies: "HTML, CSS and Javascript.",
+    media: "/Quiz App.png",
     date: "Dec 30, 2022",
     githubLink: "https://github.com/LucasCoppola/quiz-app",
     externalLink: "https://lucascoppola.github.io/quiz-app",
