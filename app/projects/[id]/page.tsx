@@ -17,7 +17,7 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
   return (
     <div className="z-10 mt-12 flex flex-col lg:flex-row">
       <div className="min-h-screen text-center lg:w-1/2 lg:text-left">
-        <h1 className="w-full font-display text-5xl font-bold tracking-normal text-stone-300 drop-shadow-sm md:leading-[5rem] lg:text-6xl">
+        <h1 className="w-full font-display text-4xl font-bold tracking-normal text-stone-300 drop-shadow-sm md:leading-[5rem] lg:text-6xl">
           <Balancer>{project?.title}</Balancer>
         </h1>
         <p className="mx-auto mt-4 font-default text-sm leading-7 text-zinc-400 md:w-1/2 lg:mt-8 lg:w-full lg:pr-14 lg:text-base">
