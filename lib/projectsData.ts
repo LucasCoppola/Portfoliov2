@@ -8,6 +8,8 @@ export const ProjectsData: CardProps[] = [
       "Strength Shop is an e-commerce web application that provides a platform for users to explore, search, filter, and purchase a wide range of fitness and strength-related products. It offers a comprehensive catalog, search functionality based on product names, and the ability to filter and sort products by categories, collections and price. Users can add products to their cart, view detailed product information, quickly add items to their cart from the product page, specify product quantities, and complete their purchase through a checkout form.",
     date: "July 10, 2023",
     technologies: "React, Typescript, Tailwind and Strapi.",
+    media:
+      "https://res.cloudinary.com/dotpfjpno/video/upload/v1689953735/StrengthShopVideo_p57pp1.mp4",
     githubLink: "https://github.com/LucasCoppola/Strength-Shop",
     externalLink: "https://strength-shop.netlify.app/",
   },
@@ -18,6 +20,8 @@ export const ProjectsData: CardProps[] = [
       "This is a Product Storage CRUD-based tool designed for companies to manage their product inventory. It offers user registration and login, and allows users to create, edit, and delete product entries with associated images. Users can add product details such as name, price, company or brand, description, and optionally, an image. The application features a user-friendly interface, a search function for easy product location, and detailed product views.",
     date: "May 13, 2023",
     technologies: "Ejs, Bootstrap, Node.js, Express.js, Mongoose and MongoDB.",
+    media:
+      "https://res.cloudinary.com/dotpfjpno/video/upload/v1689976186/StorageAppVideo_vzqsg9.mp4",
     githubLink: "https://github.com/LucasCoppola/Storage-App",
     externalLink: "https://storage-app-nmpn.onrender.com",
   },

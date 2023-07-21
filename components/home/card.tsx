@@ -11,6 +11,7 @@ export type CardProps = {
   description: string;
   date: string;
   technologies: string;
+  media?: string;
   githubLink?: string;
   externalLink?: string;
 };

@@ -5,6 +5,7 @@ import Balancer from "react-wrap-balancer";
 import { Github } from "@/components/shared/icons";
 import { ExternalLink } from "@/components/shared/icons";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ProjectDetails({ params }: { params: { id: string } }) {
   const projectSource =
@@ -41,16 +42,29 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
           )}
         </div>
       </div>
-      <video
-        controls
-        muted
-        className="z-10 h-[60vh] rounded-md border border-zinc-800 lg:w-1/2"
-      >
-        <source
-          src="https://res.cloudinary.com/dotpfjpno/video/upload/v1689953735/StrengthShopVideo_p57pp1.mp4"
-          type="video/mp4"
-        />
-      </video>
+      {projectSource === ProjectsData ? (
+        <video
+          controls
+          muted
+          className="z-10 h-[60vh] rounded-md border border-zinc-800 lg:w-1/2"
+        >
+          <source src={project?.media} type="video/mp4" />
+        </video>
+      ) : (
+        <>
+          <Image
+            className="h-[60vh] lg:w-1/2"
+            src={
+              project?.media ||
+              "https://res.cloudinary.com/dotpfjpno/image/upload/v1689976510/default-placeholder_qlzkaw.png"
+            }
+            alt={project!.title}
+            priority
+            width={400}
+            height={300}
+          />
+        </>
+      )}
     </div>
   );
 }
