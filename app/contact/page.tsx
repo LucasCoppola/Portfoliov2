@@ -15,14 +15,14 @@ import {
 
 export default function Contact() {
   return (
-    <>
-      <h1 className="mb-auto w-full font-display text-4xl font-bold tracking-normal text-stone-300 drop-shadow-sm md:text-5xl md:leading-[5rem]">
+    <div className="container z-10 mx-auto px-4">
+      <h1 className="font-display text-4xl font-bold tracking-normal text-stone-300 drop-shadow-sm md:text-5xl md:leading-[5rem]">
         <Balancer>Contact</Balancer>
       </h1>
-      <div className="z-10 flex h-full w-full flex-row items-center justify-between">
+      <div className="mt-8 flex flex-col items-center justify-between md:flex-row">
         <Icons />
-        <Root className="w-1/2">
-          <Field className="mb-2 grid" name="name">
+        <Root className="mx-auto w-full md:w-[40%]">
+          <Field className="mb-4 grid" name="name">
             <div className="flex items-baseline justify-between">
               <Label className="font-display text-sm font-medium leading-7 text-stone-300">
                 Name
@@ -39,7 +39,7 @@ export default function Contact() {
               />
             </Control>
           </Field>
-          <Field className="mb-2 grid" name="email">
+          <Field className="mb-4 grid" name="email">
             <div className="flex items-baseline justify-between">
               <Label className="font-display text-sm font-medium leading-7 text-stone-300">
                 Email
@@ -59,7 +59,7 @@ export default function Contact() {
               />
             </Control>
           </Field>
-          <Field className="mb-2 grid" name="question">
+          <Field className="mb-4 grid" name="question">
             <div className="flex items-baseline justify-between">
               <Label className="font-display text-sm font-medium leading-7 text-stone-300">
                 Message
@@ -70,7 +70,8 @@ export default function Contact() {
             </div>
             <Control asChild>
               <textarea
-                className="inline-flex w-full resize-none appearance-none items-center justify-center rounded-md bg-zinc-900 p-2 text-sm leading-none text-stone-200"
+                className="w-full resize-none appearance-none items-center justify-center rounded-md bg-zinc-900 p-2 text-sm leading-none text-stone-200"
+                rows={5}
                 required
               />
             </Control>
@@ -82,20 +83,20 @@ export default function Contact() {
           </Submit>
         </Root>
       </div>
-    </>
+    </div>
   );
 }
 
 function Icons() {
   return (
-    <div className="z-10 flex flex-col justify-start space-y-4 p-4 text-left md:space-y-8">
+    <div className="flex flex-col items-start space-y-4 p-4 text-left md:space-y-8">
       <Link
         href="https://github.com/LucasCoppola"
         target="_blank"
         className="flex flex-row items-center space-x-2"
       >
-        <Github className="h-10 w-10 text-stone-300" />
-        <span className="font-display text-3xl font-semibold text-stone-300">
+        <Github className="text-stone-300 sm:h-10 sm:w-10" />
+        <span className="font-display text-xl font-semibold text-stone-300 sm:text-3xl">
           LucasCoppola
         </span>
       </Link>
@@ -104,8 +105,8 @@ function Icons() {
         target="_blank"
         className="flex flex-row items-end space-x-2"
       >
-        <Linkedin className="h-10 w-10 text-stone-300" />
-        <span className="font-display text-3xl font-semibold text-stone-300">
+        <Linkedin className="text-stone-300 sm:h-10 sm:w-10" />
+        <span className="font-display text-xl font-semibold text-stone-300 sm:text-3xl">
           Lucas Coppola
         </span>
       </Link>
@@ -114,8 +115,8 @@ function Icons() {
         target="_blank"
         className="flex flex-row items-center space-x-2"
       >
-        <Mail className="h-10 w-10 text-stone-300" />
-        <span className="font-display text-3xl font-semibold text-stone-300">
+        <Mail className="text-stone-300 sm:h-10 sm:w-10" />
+        <span className="font-display text-xl font-semibold text-stone-300 sm:text-3xl">
           lucascoppola21@gmail.com
         </span>
       </Link>
