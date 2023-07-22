@@ -33,7 +33,11 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
           {project?.description}
         </p>
         <div className="mt-8">
-          <p className="font-default leading-7 text-zinc-400 md:text-lg">
+          <p
+            className={`font-default leading-7 text-zinc-400 ${
+              project?.media ? "lg:pr-14" : ""
+            } md:text-lg`}
+          >
             Built with: {project?.technologies}
           </p>
         </div>
