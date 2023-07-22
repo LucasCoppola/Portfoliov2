@@ -16,8 +16,9 @@ export default function Home() {
         style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
       >
         <Balancer>
-          Hi, I&apos;m a Lucas. I build high-quality web applications using
-          Typescript, React, and Node.
+          Hi, I&apos;m Lucas, a Full-Stack Developer specializing in frontend
+          development. I build high-quality web applications using Typescript,
+          React, and Node.
         </Balancer>
       </p>
     </div>
