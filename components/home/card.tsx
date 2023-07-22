@@ -12,8 +12,8 @@ export type CardProps = {
   date: string;
   technologies: string;
   media?: string;
-  githubLink?: string;
-  externalLink?: string;
+  githubLink: string;
+  externalLink: string;
 };
 
 export default function Card({ id, title, description, date }: CardProps) {

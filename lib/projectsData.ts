@@ -52,7 +52,7 @@ export const ExtraProjectsData: CardProps[] = [
     id: 5,
     title: "Image Uploader",
     description:
-      "This application allows users to upload an image file, see a preview of the uploaded image and get the URL of the uploaded image.",
+      "This application allows users to upload an image file, see a preview of the uploaded image and get the URL.",
     technologies: "Typescript, React, Tailwind, Node.js and Express.js.",
     media: "/img-uploader.png",
     date: "July 14, 2023",
