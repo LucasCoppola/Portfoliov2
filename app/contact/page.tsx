@@ -86,7 +86,7 @@ export default function Contact() {
   );
 }
 
-export function Icons() {
+function Icons() {
   return (
     <div className="z-10 flex flex-col justify-start space-y-4 p-4 text-left md:space-y-8">
       <Link
