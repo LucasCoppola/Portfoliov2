@@ -1,6 +1,7 @@
 "use client";
 
 import { ExtraProjectsData, ProjectsData } from "@/lib/projectsData";
+import useWindowSize from "@/lib/hooks/use-window-size";
 import Balancer from "react-wrap-balancer";
 import { Github } from "@/components/shared/icons";
 import { ExternalLink } from "@/components/shared/icons";
@@ -8,6 +9,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function ProjectDetails({ params }: { params: { id: string } }) {
+  const { isMobile } = useWindowSize();
   const projectSource =
     Number(params.id) > 2 ? ExtraProjectsData : ProjectsData;
 
@@ -18,9 +20,10 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
   return (
     <div className="z-10 mt-12 flex flex-col lg:flex-row">
       <div
-        className={`min-h-screen text-center ${
+        className={`text-center ${
           project?.media ? "lg:w-1/2 lg:text-left" : ""
         }`}
+        style={{ minHeight: isMobile ? "100dvh" : "100vh" }}
       >
         <h1 className="w-full font-display text-5xl font-bold tracking-normal text-stone-300 drop-shadow-sm md:leading-[5rem] lg:text-6xl">
           <Balancer>{project?.title}</Balancer>
