@@ -11,7 +11,6 @@ export const metadata = {
   title: "Lucas Coppola | Portfolio",
   description: "Lucas Coppola Portfolio",
   metadataBase: new URL("https://lucascoppola.vercel.app/"),
-  themeColor: "#",
 };
 
 export default async function RootLayout({
@@ -19,7 +18,6 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  
   return (
     <html lang="en">
       <body className={cx(sfPro.variable, inter.variable)}>
