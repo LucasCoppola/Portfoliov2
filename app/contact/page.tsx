@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Balancer from "react-wrap-balancer";
 import Link from "next/link";
 import { Github, Linkedin, Mail } from "lucide-react";
@@ -14,6 +14,12 @@ import {
 } from "@radix-ui/react-form";
 
 export default function Contact() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
   return (
     <div className="container z-10 mx-auto px-4">
       <h1 className="font-display text-4xl font-bold tracking-normal text-stone-300 drop-shadow-sm md:text-5xl md:leading-[5rem]">
@@ -21,7 +27,12 @@ export default function Contact() {
       </h1>
       <div className="mt-8 flex flex-col items-center justify-between md:flex-row">
         <Icons />
-        <Root className="mx-auto w-full md:w-[40%]">
+        <Root
+          className="mx-auto w-full md:w-[40%]"
+          target="_blank"
+          action="https://formsubmit.co/6dd7975fb11f839145a3587c0ee35723"
+          method="POST"
+        >
           <Field className="mb-4 grid" name="name">
             <div className="flex items-baseline justify-between">
               <Label className="font-display text-sm font-medium leading-7 text-stone-300">
@@ -35,6 +46,9 @@ export default function Contact() {
               <input
                 className="inline-flex h-9 w-full appearance-none items-center justify-center rounded-md bg-zinc-900 px-2 text-sm leading-none text-white shadow-md selection:bg-gray-900 selection:text-white"
                 type="text"
+                name="name"
+                value={form.name}
+                onChange={(e) => setForm({ ...form, name: e.target.value })}
                 required
               />
             </Control>
@@ -55,6 +69,9 @@ export default function Contact() {
               <input
                 className="inline-flex h-9 w-full appearance-none items-center justify-center rounded-md bg-zinc-900 px-2 text-sm leading-none text-white shadow-md selection:bg-gray-900 selection:text-white"
                 type="email"
+                name="email"
+                value={form.email}
+                onChange={(e) => setForm({ ...form, email: e.target.value })}
                 required
               />
             </Control>
@@ -71,6 +88,9 @@ export default function Contact() {
             <Control asChild>
               <textarea
                 className="w-full resize-none appearance-none items-center justify-center rounded-md bg-zinc-900 p-2 text-sm leading-none text-stone-200"
+                name="message"
+                value={form.message}
+                onChange={(e) => setForm({ ...form, message: e.target.value })}
                 rows={5}
                 required
               />
