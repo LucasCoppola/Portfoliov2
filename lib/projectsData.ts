@@ -5,7 +5,7 @@ export const ProjectsData: CardProps[] = [
     id: 1,
     title: "Strength Shop",
     description:
-      "Strength Shop is an e-commerce web application that provides a platform for users to explore, search, filter, and purchase a wide range of fitness and strength-related products. It offers a comprehensive catalog, search functionality based on product names, and the ability to filter and sort products by categories, collections and price. Users can add products to their cart, view detailed product information, quickly add items to their cart from the product page, specify product quantities, and complete their purchase through a checkout form.",
+      "Strength Shop is an e-commerce web application that allows users to explore, search, filter, and purchase a wide range of fitness and strength-related products. It offers a comprehensive catalog, search functionality based on product names, and the ability to filter and sort products by categories, collections, and prices. Users can add products to their cart, view detailed product information, quickly add items from the product page, specify product quantities, and complete their purchase through a checkout form.",
     date: "July 10, 2023",
     technologies: "React, Typescript, Tailwind and Strapi.",
     media:
