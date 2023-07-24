@@ -5,6 +5,7 @@ import cx from "classnames";
 import { sfPro, inter } from "./fonts";
 import Navbar from "@/components/layout/navbar";
 import { Suspense } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import ClientLayout from "@/components/layout/clientLayout";
 
 export const metadata = {
@@ -25,7 +26,9 @@ export default async function RootLayout({
         <Suspense fallback="...">
           <Navbar />
         </Suspense>
-        <ClientLayout>{children}</ClientLayout>
+        <ClientLayout>
+          {children} <Analytics />
+        </ClientLayout>
       </body>
     </html>
   );
