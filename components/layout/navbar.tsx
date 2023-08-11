@@ -32,12 +32,12 @@ export default function NavBar() {
           >
             Projects
           </Link>
-          <Link
+          {/* <Link
             href="/about"
             className="font-display text-stone-500 hover:text-stone-400 md:text-xl"
           >
             About
-          </Link>
+          </Link> */}
           <Link
             href="/contact"
             className="font-display text-stone-500 hover:text-stone-400 md:text-xl"
