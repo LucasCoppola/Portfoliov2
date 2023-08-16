@@ -30,15 +30,28 @@ export const ProjectsData: CardProps[] = [
 export const ExtraProjectsData: CardProps[] = [
   {
     id: 3,
-    title: "Portfolio 2.0",
+    title: "My Unsplash",
+    description:
+      "A personalized photo app built to streamline image management. Users can effortlessly upload, search via labels, and delete photos, all backed by a secure authentication system.",
+    date: "Aug 8, 2023",
+    technologies:
+      "Next.js, React, Typescript, Prisma, Auth.js, Tailwind and PostgreSQL.",
+    media:
+      "https://res.cloudinary.com/dotpfjpno/image/upload/v1691339890/Captura_de_pantalla_2023-08-06_133733_gg4j47.png",
+    githubLink: "https://github.com/LucasCoppola/my-unsplash",
+    externalLink: "https://my-unsplash-lc.vercel.app",
+  },
+  {
+    id: 4,
+    title: "Portfolio",
     description: "The website you're looking at.",
-    date: "Soon",
+    date: "July 26, 2023",
     technologies: "Next.js, React, Typescript and Tailwind.",
     githubLink: "https://github.com/LucasCoppola/Portfoliov2",
     externalLink: "https://lucascoppola.vercel.app",
   },
   {
-    id: 4,
+    id: 5,
     title: "Cart App",
     description:
       "Simple cart app for easy shopping. Add, delete, and adjust product quantities effortlessly.",
@@ -49,7 +62,7 @@ export const ExtraProjectsData: CardProps[] = [
     externalLink: "https://addtocart-app.netlify.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Image Uploader",
     description:
       "This application allows users to upload an image file, see a preview of the uploaded image and get the URL.",
@@ -60,7 +73,7 @@ export const ExtraProjectsData: CardProps[] = [
     externalLink: "https://img-uploads.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Task Manager",
     description:
       "A straightforward and efficient to-do list application with seamless data storage in a database for efficient task management. Easily add, edit, and manage tasks using this user-friendly app.",
@@ -69,17 +82,6 @@ export const ExtraProjectsData: CardProps[] = [
     date: "Apr 4, 2023",
     githubLink: "https://github.com/LucasCoppola/Task-Manager",
     externalLink: "https://task-manager-bm8s.onrender.com",
-  },
-  {
-    id: 7,
-    title: "Portfolio",
-    description:
-      "This is my first portfolio, created to display my projects, the technologies I'm familiar with, a brief introduction about myself, and a timeline of my journey so far.",
-    technologies: "React and Tailwind.",
-    media: "/Portfolio.png",
-    date: "May 19, 2023",
-    githubLink: "https://github.com/LucasCoppola/Portfolio",
-    externalLink: "https://lucascoppola.netlify.app",
   },
   {
     id: 8,
@@ -92,6 +94,17 @@ export const ExtraProjectsData: CardProps[] = [
     githubLink: "https://github.com/LucasCoppola/quiz-app",
     externalLink: "https://lucascoppola.github.io/quiz-app",
   },
+  // {
+  //   id: 9,
+  //   title: "Portfolio",
+  //   description:
+  //     "This is my first portfolio, created to display my projects, the technologies I'm familiar with, a brief introduction about myself, and a timeline of my journey so far.",
+  //   technologies: "React and Tailwind.",
+  //   media: "/Portfolio.png",
+  //   date: "May 19, 2023",
+  //   githubLink: "https://github.com/LucasCoppola/Portfolio",
+  //   externalLink: "https://lucascoppola.netlify.app",
+  // },
 ];
 
 const data = {
